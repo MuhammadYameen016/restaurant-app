@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    padding: 7px 0px 7px 0px;
+    background-color: #e21a70;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn{
+    font-size: 13px;
+    width: 130px;
+    height: 40px;
+    color: white;
+    background-color: #e21a70;
+    border-color: white;
+    border-width: 1.5px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+.cancel-mark{
+    color: white;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.photo img{
+    position: relative;
+    width: 50%;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 40px 0px 40px;
+}
+
+.final{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.language{
+    display: flex;
+    gap: 5px;
+}
+
+.btn1{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    border-width: 1px;
+    font-weight: bold;
+}
+
+.btn2{
+    font-weight: bold;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: #e21a70;
+    background-color: #e21a70;
+    color: white;
+    border-width: 1px;
+}
+
+.display i{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .btn1, .btn2, .language{
+        display: none;
+    }
+
+    .btn{
+        margin-right: 30px;
+    }
+
+    .parent h1{
+        font-size: 15px;
+    }
+    
+    .parent img{
+        display: none;
+    }
+
+    .photo img{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        left: 20px;
+    }
+
+    .display i{
+        display: flex;
+        align-items: center;
+    }
+
+    .box{
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media(max-width: 375px){
+    .photo img{
+        left: 20px;
+    }
+}
+
+@media(min-width:1024px){
+    .photo img{
+        left: -200px;
+    }
+}
+
+@media(min-width:1440px){
+    .photo img{
+        left: -400px;
+    }
+}
+
+@media(min-width:2560px){
+    .photo img{
+        left: -990px;
+    }
+}
