@@ -1,152 +1,261 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-.nav{
-    background-color: hsl(0, 0%, 100%);
-    height: 70px;
-    box-shadow: 0px 4px 5px rgba(128, 128, 128, 0.5); /* Grey shadow */
-
-}
-.img-fluid{
-    width: 10%;
-    position: relative;
-    left: 40px;
-    top: -40px;
-    padding: 25px;
-}
-.loc{
-    position: relative;
-    top: -110px;
-    left: 310px;
-    width: 40%;
-}
-.location{
-    position: relative;
-    top: -128px;
-    font-size: 18px;
-    left: 520px;
-    color: #39434D ;
-    font-weight: 500;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.btn1{
-    width: 84px;
-    height: 35px;
-    border-radius: 10px;
-    background-color: white;
-    border-width: 1px;
-    font-weight: bold;
-   position: relative;
-   left: -10px;
-}
-
-.div{
-    position: relative;
-    left: -250px;
-    top: -155px;
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 12px 5%;
+    width: 100%;
     display: flex;
-    justify-self: flex-end;
+    justify-content: center;
+    height: 100px;
 }
-.btn2{
+
+.nav-container {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logos {
+    height: auto;
+    max-width: 150px;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-left: 30px;
+}
+
+
+.location {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
     font-weight: bold;
-    width: 84px;
-    height: 35px;
+    color: #444;
+    margin-left: 300px;
+}
+
+.location i {
+    font-size: 18px;
+    color: #e21a70;
+    margin-right: 5px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: -20px;
+
+}
+
+.btn {
+    width: 85px;
+    height: 36px;
     border-radius: 10px;
-    border-color: #e21a70;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-login {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.btn-signup {
+    border: none;
     background-color: #e21a70;
     color: white;
-    border: none;
-    margin-left: 10px;
-    border-width: 1px;
-}
-.language{
-display: flex;
-justify-self: flex-end;
-position: relative;
-left: -90px;
-top: -177px;
-}
-.fs{
-    position: relative;
-    left: 50px;
-}
-.fss{
-    position: relative;
-    left: 10px;
 }
 
-@media screen and (max-width: 480px) {
-     .nav{
-        background-color: hsl(0, 0%, 100%);
-        height: 70px;
-        box-shadow: 0px 4px 5px rgba(128, 128, 128, 0.5); /* Grey shadow */
-     }
-    .img-fluid{
-        width: 30%;
-        position: relative;
-        left: -10px;
-        top: -45px;
-        padding: 25px;
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icons i {
+    font-size: 17px;
+    color: #e21a70;
+    cursor: pointer;
+}
+.text{
+    background-color: whitesmoke;
+    height: 300px;
+    width: 100%;
+}
+.text p{
+    padding: 70px;
+    font-size: 42px;
+    color: rgb(46, 46, 46);
+    font-weight: bold;
+}
+.logo{
+    width: 35%;
+    display: flex;
+    justify-self: flex-end;
+    margin-top: -315px;
+}
+.nav-bar2{
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+}
+.f{
+    font-size: 12px;
+    margin-top: 4px;
+}
+.home{
+    text-decoration: underline;
+
+}
+.restaurants p{
+    font-size: 42px;
+    margin-left: 40px;
+    letter-spacing: -1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.c-img1{
+    height: 240px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     }
-    .loc{
-        position: relative;
-        top:-75px;
-        left: -150px;
-        width: 10%;
+
+.card-text{
+    position: absolute;
+    left: -24px;
+}
+
+.card1{
+    border-radius: 50px;
+    height: 330px;
+    margin: 20px;
+ width: 400px;
+ color: rgb(82, 82, 82);
+ height: 200px;
+ position: absolute;
+ left: 50px;
+}
+.fo{
+    position: absolute;
+    left: 290px;
+    color: rgb(255, 145, 0);
+}
+.rate{
+display: flex;
+justify-content: end;
+    font-size: 12px;
+}
+.P-b{
+    width: 140px;
+    height: 28px;
+    border-radius: 10px;
+    background-color: #f30d93;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.p-b2{
+    width: 200px;
+    height: 28px;
+    border-radius: 10px;
+    background-color: #f30d93;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 100px;
+
     }
-    .location{
-        position: relative;
-        top: -93px;
+
+    .navbar {
+        margin-top: -30px;
+        height: 140px;
+    }
+
+    .location {
+        display: flex;
+        align-items: center;
         font-size: 16px;
-        left: 35px;
-        color: #39434D ;
-        font-weight: 500;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .btn1{
-        width: 64px;
-        height: 30px;
-        border-radius: 10px;
-        background-color: white;
-        border-width: 1px;
         font-weight: bold;
-       position: relative;
-       left: -10px;
+        color: #444;
+        margin-left: -90px;
     }
-    
-    .div{
-        position: relative;
-        left: -30px;
-        top: -120px;
+
+    .location i {
+        margin-left: 104px;
+    }
+
+    .nav-right {
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+    .nav-left {
+        margin-left: -30px;
+    }
+
+    .sec2 {
+        font-size: 20px;
+    }
+    .text{
+        height: 220px;
+    }
+    .text p{
         display: flex;
-        justify-self: flex-end;
-        /* width: 20%;
-        height: 80px; */
+        padding: 30px;
+        margin-top: -30px;
+        margin-left: -20px;
+        font-size: 26px;
     }
-    .btn2{
-        font-weight: bold;
-        width: 64px;
-        height: 30px;
-        border-radius: 10px;
-        border-color: #e21a70;
-        background-color: #e21a70;
-        color: white;
-        border: none;
-        margin-left: 10px;
-        border-width: 1px;
+    .logo{
+        position: absolute;
+        bottom: 370px;
+        right: -30px;
+        width: 55%;
     }
-    .language{
-        display: flex;
-        justify-self: flex-end;
-        position: relative;
-        left: -130px;
-        top: -170px;
-        }
-        .fs{
-            position: relative;
-            left: 40px;
-        }
-    
-  }
+    .nav-bar2{
+        margin:-30px;
+    }
+    .restaurants{
+        margin:-20px ;
+    }
+    .card1 {
+        width: 87%;
+        max-width: 100%;
+        margin: -25px;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+    .fo{
+        margin-left: -80px;
+    }
+}
