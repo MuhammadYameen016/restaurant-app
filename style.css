@@ -104,12 +104,6 @@
     align-items: center;
 }
 
-.image1 img{
-    /* position: absolute;
-    width: 80%;
-    top: 15%; */
-}
-
 .content h1{
     font-size: 40px;
 }
@@ -270,5 +264,124 @@
 
     .content button{
         width: 280px;
+    }
+}
+
+.image2 {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.image2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.set-div h1{
+    padding-left: 40px;
+    margin-top: 80px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.white-box{
+    width: 500px;
+    padding: 20px;
+    border-radius: 30px;
+    position: relative;
+    top: -199px;    
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: -80px;
+    background-color: white;
+    left: 3%;
+}
+
+.white-box b{
+    font-size: 23px;
+}
+
+.white-box button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #e21a70;
+    border-color: #e21a70;
+    color: white;
+}
+
+@media(width: 2560px){
+    .white-box{
+        width: 1300px;
+        font-size: 40px;
+        top: -300px;
+    }
+
+    .white-box b{
+        font-size: 50px;
+    }
+
+    .white-box button{
+        width: 200px;
+        height: 50px;
+        font-size: 30px;
+    }
+}
+
+@media(width: 1440px){
+    .white-box{
+        width: 700px;
+        font-size: 20px;
+        top: -300px;
+    }
+
+    .white-box b{
+        font-size: 30px;
+    }
+
+    .white-box button{
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+@media(width: 768px){
+    .white-box{
+        width: 300px;
+        font-size: 15px;
+        top: -250px;
+    }
+
+    .white-box b{
+        font-size: 20px;
+    }
+
+    .white-box button{
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 425px){
+    .set-div{
+        margin-top: -80px;
+    }
+    .white-box{
+        width: 200px;
+        font-size: 10px;
+        top: -200px;
+    }
+
+    .white-box b{
+        font-size: 15px;
+    }
+
+    .white-box button{
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
     }
 }
