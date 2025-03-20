@@ -1,0 +1,402 @@
+.lahoreHeroSection {
+    display: flex;
+    /* margin-left: 0px;margin-right: 0px; */
+    align-items: center;
+
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+h1 {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 3em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 30%;
+    margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+    .lahoreHeroSection {
+        /* flex-direction: row; */
+        align-items: center;
+        width: 90%;
+    }
+
+    h1 {
+        text-align: center;
+        margin-left: 0;
+        font-size: 0.7em;
+        text-align: left;
+    }
+
+    img {
+        width: 90%;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.lahore_directoryShow {
+    margin-top: 3vw;
+    margin-left: 1vw;
+}
+
+.lahore_HomePageLink,
+.lahore_lahorePageLink {
+    text-decoration: none;
+    color: #555;
+}
+
+.lahore_HomePageLink:hover {
+    color: #ff4081;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+.lahore_lahorePageLink:hover {
+    color: #ff4081;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* hero section=======================*/
+
+
+
+
+
+/* cards list==========================*/
+/* Global reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 20px;
+    color: #333;
+}
+
+/* Page title */
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.restaurant-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 500px) {
+    .restaurant-container {
+        /* Force single column below 500px width */
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
+
+.restaurant-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-card:hover {
+    transform: translateY(-3px);
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offer-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff4081;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h2 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.card-content .cuisine {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+}
+
+.rating span:first-child {
+    font-weight: bold;
+}
+
+/* cards list=========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* description text====================== */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container to center content and control maximum width */
+.dd_container {
+    max-width: 100%;
+    /* You can adjust this width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.dd_highlight_word {
+    color: #ff4081;
+}
+
+.dd_highlight_word:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-color: #ff4081;
+}
+
+h1,
+h2 {
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+h1 {
+    text-align: left;
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Unordered list style */
+.dd_unordered_list {
+    list-style-type: disc;
+    margin-left: 20px;
+    /* Indent bullets */
+    margin-bottom: 20px;
+}
+
+.dd_unordered_list li {
+    margin-bottom: 8px;
+}
+
+/* Basic responsiveness: Adjust heading sizes and container padding for smaller screens */
+@media (max-width: 600px) {
+    .dd_container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* description text====================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer ====================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-container {
+    border-top: 2px dotted #cbcbcb;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Use flexbox for responsiveness */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    /* allows columns to wrap on smaller screens */
+    gap: 20px;
+    /* space between columns */
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1 1 200px;
+    /* each column has a minimum width of 200px */
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    text-decoration: underline;
+    /* underlined by default */
+    color: #333;
+    transition: font-weight 0.2s ease;
+}
+
+.footer-column a:hover {
+    font-weight: bold;
+    /* becomes bold on hover */
+}
+
+/* Bottom area of the footer */
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    text-decoration: underline;
+    color: #333;
+    margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        width: 100%;
+    }
+}
+
+/* footer ====================================== */
