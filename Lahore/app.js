@@ -84,7 +84,7 @@ let cardsArray = [
         rating: 1.9, ratingStar: "⭐⭐"
     },
     {
-        imgLink: "https://www.biggerbolderbaking.com/wp-content/uploads/2020/01/2-Ingredient-Ice-cream-Thumbnail-scaled.jpg",
+        imgLink: "https://static.toiimg.com/thumb/msid-112315676,width-1280,height-720,resizemode-4/112315676.jpg",
         hotelName: "Ice Cream Parlour",
         dish: "Ice Cream",
         rating: "4.0", ratingStar: "⭐⭐⭐⭐"
