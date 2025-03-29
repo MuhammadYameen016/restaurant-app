@@ -29,11 +29,10 @@
     width: 400px;
     display: flex;
     align-items: center;
-    gap: 0px;
 
 }
 
-#btn-light {
+.btn-light {
     border-radius: 10px !important;
     font-weight: 700;
     color: #444242;
@@ -45,53 +44,243 @@
     height: 40px;
 }
 
-#btn-Dark {
+.btn-dark,
+.btn-light {
+    position: relative;
+    left: 500px;
+}
+
+.btn-Dark {
     width: 25%;
     height: 40px;
     border-radius: 10px !important;
     font-weight: 700;
     color: white;
+    position: relative;
+    left: 500px;
     background-color: #FF2B85;
     margin: 7px;
     padding: 5px 10px;
     border: none;
 }
 
-#a1 {
-    font-size: large;
+*/
 
+/* General Modal Styles */
+.modal {
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    height: 600px; /* Added fixed height */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ff2b85;
+}
+
+.modal-header h1 {
+    color: #000000;
+    font-size: 28px;
+    margin-top: -400px;
+}
+.modal-header p{
+    margin-left: -140px;
+    margin-top:-230px;
+    color: black;
+}
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#userGreeting {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: #6d6b6b; /* Dark color for better visibility */
+}
+
+.user {
+    margin-left: -200px; /* Add space between icon and text */
+    font-size: 18px; /* Adjust icon size */
+    color: #000000; /* Blue color for the user icon */
+}
+
+/* Buttons */
+#logoutBtn {
+    background-color: #ed1a95; /* Red color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: -10px;
+}
+
+#logoutBtn:hover {
+    background-color: #ff00a6; /* Darker red on hover */
+}
+
+.modal-btn,
+.google-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal-btn {
+    background: #ff2b85;
+    color: #fff;
+    font-weight: bold;
+}
+
+.modal-btn:hover {
+    background: #e02170;
+}
+
+.google-btn {
+    background: #4285F4;
+    color: white;
+    font-weight: bold;
+    margin-bottom: -170px;
+}
+
+.google-btn:hover {
+    background: #357ae8;
+}
+
+
+.facebook-btn {
+    background: #1877F2;
+    color: white;
+    font-weight: bold;
+    /* gap: 15px; Increased space between icon and text */
+
+    margin-left: -250px;
+}
+.facebook-btn::before {
+    content: "\f09a";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 18px;
+}
+.facebook-btn:hover {
+    background: #165dce;
+}
+
+.apple-btn {
+    background: #000;
+    color: white;
+    font-weight: bold;
+    margin-top: -100px;
+    margin-left: -325px;
+}
+.apple-btn::before {
+    content: "\f179";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 18px;
+}
+.apple-btn:hover {
+    background: #333;
+}
+
+.modal-btn, .google-btn, .facebook-btn, .apple-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
 
 .loction {
     display: flex !important;
     align-items: center !important;
     gap: 5px;
-
+    /* margin-left: -200px;  */
 }
 
 #global-div {
-    font-weight: 900;
+    /* font-weight: 900; */
     font-size: large;
-    padding-left: 10px;
+    margin-left: 400px;
+    /* padding-left: 10px; */
 }
 
 #drop-down-div {
     font-size: large;
     display: flex !important;
     align-items: center;
-
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
 #shopping-bag {
     font-weight: 900;
     font-size: larger;
-    padding-left: 10px;
+    margin-left: 10px;
+    /* padding-left: -360px; */
 }
 
 #navbar-text {
     font-size: medium;
     gap: 10px;
+    position: relative;
+    left: 200px;
+}
+
+#navbar-text:hover{
+color: rgb(134, 130, 130);
+animation: backwards;
+cursor: pointer;
 }
 
 .hero-section-main {
@@ -174,7 +363,7 @@
         align-items: center;
     }
 
-    
+
 }
 
 
@@ -204,16 +393,18 @@
     height: auto;
     display: block;
 }
-.nav{
-gap: 10px;
-margin-left: 100px;
-padding: 80px;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 17px;
-color: #444242;
-text-decoration: underline;
+
+.nav {
+    gap: 10px;
+    margin-left: 100px;
+    padding: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #444242;
+    text-decoration: underline;
 }
-.nav-main-name p{
+
+.nav-main-name p {
     margin-top: -50px;
     margin-left: 90px;
     font-size: 42px;
@@ -225,29 +416,30 @@ text-decoration: underline;
 
 .card1 {
     border-radius: 20px;
-    max-width: 380%; 
-    min-width:380%; 
+    max-width: 380%;
+    min-width: 380%;
     color: rgb(82, 82, 82);
-    margin: 20px 80px; 
-    position: relative; 
+    margin: 20px 80px;
+    position: relative;
     padding-bottom: 25px;
     transition: transform 0.3s ease-in-out;
 }
 
 .card1:hover {
-    transform: scale(1.03); 
+    transform: scale(1.03);
 }
 
 
 .card-text {
     font-size: 14px;
-    margin-left:1px;
+    margin-left: 1px;
 }
+
 .fo {
     color: rgb(255, 145, 0);
     font-size: 14px;
-    margin-left:230px;
-    
+    margin-left: 230px;
+
 }
 
 .rate {
@@ -256,16 +448,17 @@ text-decoration: underline;
     margin-left: 8px;
 
 }
-.char{
-   margin-top: -40px;
+
+.char {
+    margin-top: -40px;
 
 }
 
-.P-b{
+.P-b {
     width: 100px;
     height: 28px;
     border-radius: 10px;
-    background-color:#eb2c7c;
+    background-color: #eb2c7c;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     border: none;
@@ -275,11 +468,12 @@ text-decoration: underline;
     left: 10px;
 
 }
+
 .p-b2 {
     width: 170px;
     height: 28px;
     border-radius: 10px;
-    background-color:#eb2c7c;
+    background-color: #eb2c7c;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     border: none;
@@ -304,14 +498,15 @@ text-decoration: underline;
 .card1 {
     display: flex;
     width: 100%;
-    max-width: 400px; 
+    max-width: 400px;
     border-radius: 20px;
     transition: transform 0.3s ease-in-out;
 }
 
 
 
-.P-b, .p-b2 {
+.P-b,
+.p-b2 {
     font-size: 12px;
     margin-top: -10px;
 }
@@ -321,11 +516,13 @@ text-decoration: underline;
         flex-direction: column;
         align-items: center;
     }
+
     .card1 {
         width: 80%;
     }
 
-    .P-b, .p-b2 {
+    .P-b,
+    .p-b2 {
         font-size: 11px;
     }
 }
@@ -336,7 +533,8 @@ text-decoration: underline;
         margin-left: 50px;
     }
 
-    .P-b, .p-b2 {
+    .P-b,
+    .p-b2 {
         height: 28px;
         font-size: 10px;
     }
@@ -350,28 +548,30 @@ text-decoration: underline;
     .txt {
         display: flex;
         flex-direction: row;
-        align-items: center; 
+        align-items: center;
         text-align: center;
         padding: 10px;
     }
 
     .txt p {
         font-size: 1.5rem;
-        text-align: left; 
+        text-align: left;
         margin: 20px 10;
     }
 
     .txt img {
-        width: 65%; 
+        width: 65%;
         max-width: 250px;
         height: auto;
         margin-top: 110px;
     }
-    .nav{
+
+    .nav {
         margin-top: -40px;
         margin-left: 20px;
     }
-    .nav-main-name p{
+
+    .nav-main-name p {
         margin-top: -80px;
         margin-left: 10px;
     }
