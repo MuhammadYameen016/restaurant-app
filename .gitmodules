@@ -1,0 +1,3 @@
+[submodule "Restaurant-Admin-Panel"]
+	path = Restaurant-Admin-Panel
+	url = https://github.com/mzaidrizwan/Restaurant-Admin-Panel.git
