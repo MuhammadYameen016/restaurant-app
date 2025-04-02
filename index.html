@@ -11,37 +11,75 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 </head>
-
+<!-- <h1></h1> -->
 <body>
-    <section id="main">
-        <div class="parent">
-            <img width="50px" class="img" src="./assets/images/header.png" alt="">
-            <h1>Do you need a business account?</h1>
-            <button class="btn">SIGN UP NOW</button>
-        </div>
-        <div>
-            <i onclick="del()" class="cancel-mark fa-solid fa-xmark"></i>
-        </div>
-    </section>
+  <section id="main">
+    <div class="parent">
+      <img width="50px" class="img" src="./assets/images/header.png" alt="">
+      <h1>Do you need a business account?</h1>
+      <button  class="btn" onclick="openModal('signupPopup')">SIGN UP NOW</button>
+    </div>
+    <div>
+      <i onclick="del()" class="cancel-mark fa-solid fa-xmark"></i>
+    </div>
+  </section>
   <header>
     <nav class="active">
       <div class="photo">
         <img src="./assets/images/logo.png" alt="">
-      </div>  
+      </div>
       <div class="div">
-        <div>
-          <button class="login">Log In</button>
-          <button class="sign">Sign Up</button>
-        </div>
+        <div class="overlay"></div>
+        <button class="login" onclick="openModal('loginPopup')">Login</button>
+        <button class="sign" onclick="openModal('signupPopup')">Sign Up</button>
+        <nav>
+          <span id="userNav" style="display: none;">
+            <i class="fa-regular fa-user"></i> <b id="userName"></b>
+          </span>
+      </nav>
+      
+      
+    <!-- Login Popup -->
+    <div class="popup" id="loginPopup">
+      <h1>Welcome!</h1>
+      <p>Log in to continue</p>
+      
+      <button class="facebook-btn">Continue with Facebook</button><br>
+      <button class="apple-btn">Continue with Apple</button>
+
+      <input type="text" id="loginEmail" placeholder="Name">
+      <input type="email" id="loginEmail" placeholder="Email">
+      <input type="password" id="loginPassword" placeholder="Password">
+      <button  class="modal-btn" onclick="login()"> Login</button>
+      <button class="google-btn"> Sign in with Google</button>
+      <button class="close-btn" onclick="closeModal('loginPopup')">Close</button>
+  </div>
+
+  <!-- Signup Popup -->
+  <div class="popup" id="signupPopup">
+      <h1>Welcome!</h1>
+      <p>Sign up to continue</p>
+      <button class="facebook-btn">Continue with Facebook</button><br>
+      <button class="apple-btn">Continue with Apple</button>
+      <input type="text" id="signupName" placeholder="Full Name">
+      <input type="email" id="signupEmail" placeholder="Email">
+      <input type="password" id="signupPassword" placeholder="Password">
+      <button  class="modal-btn" onclick="signup()"> sign Up</button>
+      <button class="google-btn"> Sign in with Google</button>
+      <button class="close-btn" onclick="closeModal('signupPopup')">Close</button>
+
+  </div>
+        
         <div class="sub-div">
           <div class="i-globe1">
             <i class="fa-solid fa-globe globe"></i>EN
           </div>
           <i class="fa-solid fa-bag-shopping"></i>
         </div>
-      </div>
+        </div>
     </nav>
   </header>
 
@@ -157,7 +195,8 @@
 
           <a href="./src/Peshawar/index.html">
             <div class="card P">
-              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/94/99/cc/caption.jpg?w=1200&h=700&s=1"
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/94/99/cc/caption.jpg?w=1200&h=700&s=1"
                 alt="" />
               <p>Peshawar</p>
             </div>
@@ -273,7 +312,7 @@
                     fill="#FFFFFE"></path>
                 </g>
               </svg>
-              
+
               <svg aria-hidden="true" focusable="false" width="135" class="center-svg" height="40" viewBox="0 0 135 40"
                 xmlns="http://www.w3.org/2000/svg">
                 <defs>
@@ -625,7 +664,7 @@
       <a href="#_">Bangladesh</a>
     </section>
 
-    
+
     <div class="divider max-w-xl"></div>
 
     <section class="branding max-w-xl">
@@ -675,7 +714,7 @@
       </div>
     </section>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src='app.js'></script>
 </body>
 
