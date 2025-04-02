@@ -36,6 +36,24 @@ body {
     transition: 0.2s ease;
     cursor: pointer;
 }
+#logoutBtn{
+  background-color: #ed1a72; /* Red color */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: -10px;
+}
+
+#logoutBtn:hover{
+  background-color: #ff00a6; /* Darker red on hover */
+
+
+}
 .container {
   margin-top: 50px;
 }

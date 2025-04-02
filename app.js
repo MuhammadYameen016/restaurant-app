@@ -35,9 +35,10 @@ function login() {
         // Extract username from email (before "@")
         let userName = email.split("@")[0]; 
 
-        // Display user's name with icon
+        // Display user's name with icon and logout button
         document.getElementById("userName").innerHTML = userName;
-        document.getElementById("userNav").style.display = "inline"; 
+        document.getElementById("userNav").style.display = "inline";
+        document.getElementById("logoutBtn").style.display = "inline"; // Show logout button
 
         closeModal("loginPopup");
     } else {
@@ -48,4 +49,20 @@ function login() {
             confirmButtonText: "OK"
         });
     }
+}
+
+function logout() {
+    Swal.fire({
+        title: "Logged Out",
+        text: "You have been successfully logged out.",
+        icon: "info",
+        confirmButtonText: "OK"
+    });
+
+    document.querySelector(".login").style.display = "inline";
+    document.querySelector(".sign").style.display = "inline";
+
+    // Hide user info & logout button
+    document.getElementById("userNav").style.display = "none";
+    document.getElementById("logoutBtn").style.display = "none";
 }

@@ -20,11 +20,12 @@
     <div class="parent">
       <img width="50px" class="img" src="./assets/images/header.png" alt="">
       <h1>Do you need a business account?</h1>
-      <button  class="btn" onclick="openModal('signupPopup')">SIGN UP NOW</button>
+    <button class="btn" onclick="openModal('signupPopup')">SIGN UP NOW</button>
     </div>
     <div>
       <i onclick="del()" class="cancel-mark fa-solid fa-xmark"></i>
     </div>
+    <p></p>
   </section>
   <header>
     <nav class="active">
@@ -38,10 +39,11 @@
         <nav>
           <span id="userNav" style="display: none;">
             <i class="fa-regular fa-user"></i> <b id="userName"></b>
+            <button id="logoutBtn" onclick="logout()" style="display: none; background: #ed1a9c; color: white; border: none; padding: 5px 10px; margin-left: 10px; cursor: pointer; border-radius: 5px;">Logout</button>
+
           </span>
       </nav>
-      
-      
+    
     <!-- Login Popup -->
     <div class="popup" id="loginPopup">
       <h1>Welcome!</h1>
