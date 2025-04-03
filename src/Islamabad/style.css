@@ -5,6 +5,11 @@
 
 }
 
+.khi a{
+    color: black;
+    text-decoration: none;
+}
+
 .navbar-main-div {
     display: flex;
     justify-content: space-between;

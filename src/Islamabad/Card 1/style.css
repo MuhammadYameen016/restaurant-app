@@ -1,0 +1,302 @@
+:root {
+  --primary-color: #d70f64;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.box {
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.4rem;
+}
+
+.photo img {
+  width: 50%;
+}
+
+nav>.logo {
+  padding: 1rem 0;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  align-items: center;
+  display: flex;
+}
+
+nav>.logo>svg {
+  margin-right: 0.3rem;
+  display: none;
+}
+
+nav>* {
+  cursor: pointer;
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav .login {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  border-color: #000;
+  background-color: white;
+}
+
+.sub-div {
+  display: flex;
+  align-items: center;
+}
+
+.sub-div i {
+  margin-left: 15px;
+}
+
+.globe {
+  margin-right: 5px;
+}
+
+nav .sign {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  border-color: #d70f64;
+  border-radius: 10px;
+  background-color: #d70f64;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  nav>.logo>svg {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  nav>.profile-icon-medium {
+    display: none;
+  }
+
+  nav .login-btn {
+    display: inline-flex;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  .div button {
+    display: none;
+  }
+
+  .i-globe1 {
+    display: none;
+  }
+}
+
+.anc {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.anc a {
+  color: black;
+  margin-left: 25px;
+
+}
+
+.anc .home {
+  margin-right: 10px;
+}
+
+.anc .isl {
+  margin-right: 10px;
+}
+
+.anc .khi {
+  margin-left: 10px;
+}
+
+.main {
+  margin-left: 25px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.main img {
+  border-radius: 20px;
+  width: 300px;
+  margin-left: 20px;
+}
+
+.main .flex {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.space {
+  margin-right: 10px;
+}
+
+.space1 {
+  margin-left: 10px;
+}
+
+.flex1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nela-daba {
+  background-color: #EBEBEB;
+  width: 300px;
+  height: 120px;
+  text-align: center;
+  align-content: center;
+  border-radius: 10px;
+}
+
+.nela-daba .pro {
+  width: 50px;
+  height: 20px;
+  align-content: center;
+  font-size: 10px;
+  font-weight: bolder;
+  background-color: #5C1D94;
+  color: white;
+  border-radius: 20px;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small {
+  font-size: 13px;
+}
+
+.pink-daba {
+  background-color: #FAD9E7;
+  width: 300px;
+  height: 120px;
+  text-align: center;
+  align-content: center;
+  border-radius: 10px;
+}
+
+.white-daba {
+  width: 300px;
+  height: 120px;
+  text-align: center;
+  align-content: center;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+.dabe {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.deals {
+  margin-left: 25px;
+}
+
+.deals .head {
+  font-weight: bolder;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.biryani{
+  width: 300px;
+  height: 400px;
+  border: 1px solid grey;
+}
+
+.flex-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.biryani1{
+  margin-left: 10px;
+}
+
+.p-tag p{
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: 0.4s ease;
+}
+
+.p-tag p:hover{
+  color: skyblue;
+  background-color: black;
+}
+
+.flexbox{
+  margin-top: 30px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 50px;
+}
+
+.c{
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.div1{
+  color: grey; 
+  border-color: grey;
+}
+
+.sec{
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+}
+
+.div123{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.last-div{
+  margin-right: 20px;
+}
