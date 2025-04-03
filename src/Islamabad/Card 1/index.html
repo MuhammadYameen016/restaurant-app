@@ -92,7 +92,7 @@
             <p>Rs. 280/kg</p>
           </div>
           <div class="p-tag">
-            <p>+</p>
+            <p onclick="addToCart(1)">+</p>
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@
             <p>Rs. 6400</p>
           </div>
           <div class="p-tag">
-            <p>+</p>
+            <p onclick="addToCart(2)">+</p>
           </div>
         </div>
       </div>
@@ -118,8 +118,15 @@
             <p>Rs. 580/piece</p>
           </div>
           <div class="p-tag">
-            <p>+</p>
+            <p onclick="addToCart(3)">+</p>
           </div>
+        </div>
+      </div>
+
+      <div id="cart">
+        <p class="p-tags">Cart</p>
+        <div id="carts">
+          <p class="total"><span id="enterNum"></span></p>
         </div>
       </div>
     </div>
@@ -163,6 +170,9 @@
       </div>
     </div>
   </div>
+
+
+  <script src="app.js"></script>
 </body>
 
 </html>
