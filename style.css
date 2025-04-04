@@ -34,14 +34,162 @@ body {
     border-radius: 10px;
     font-weight: bold;
     transition: 0.2s ease;
+    cursor: pointer;
+}
+#logoutBtn{
+  background-color: #ed1a72; /* Red color */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: -10px;
 }
 
-.btn:hover{
-    background-color: white;
-    color: black;
-    border-color: white;
+#logoutBtn:hover{
+  background-color: #ff00a6; /* Darker red on hover */
+
+
+}
+.container {
+  margin-top: 50px;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999; /* Ensures it's on top of everything */
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  z-index: 1000;
+  width: 300px;  /* Increased width */
+
+}
+
+.popup.active {
+  display: block;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+
+.overlay.active {
+  display: block;
+}
+.popup input {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.popup button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login-btn {
+  background: #007bff;
+  color: white;
+  text-align: center;
+}
+.signup-btn {
+  background: #28a745;
+  color: white;
+}
+.close-btn {
+  background: #dc3545;
+  color: white;
+}
+.overlay.active {
+  display: block;
+  backdrop-filter: blur(5px); /* Adds a blur effect */
+}
+ 
+.facebook-btn {
+  background: #1877F2;
+  color: white;
+  font-weight: bold;
+  /* margin-left: -50px; */
+}
+.facebook-btn::before {
+  content: "\f09a";
+  font-family: "Font Awesome 5 Brands";
+  font-size: 18px;
+}
+.facebook-btn:hover {
+   background: #165dce;
+}
+
+.apple-btn {
+  background: #000;
+  color: white;
+  font-weight: bold;
+  margin-top: -100px;
+}
+.apple-btn::before {
+  content: "\f179";
+  font-family: "Font Awesome 5 Brands";
+  font-size: 18px;
+}
+.apple-btn:hover {
+  background: #333;
+}
+.modal-btn,
+.google-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal-btn {
+    background: #ff2b85;
+    color: #fff;
+    font-weight: bold;
+}
+
+.modal-btn:hover {
+    background: #e02170;
+}
+
+.google-btn {
+    background: #4285F4;
+    color: white;
+    font-weight: bold;
+    margin-bottom: -170px;
+}
+
+.google-btn:hover {
+    background: #357ae8;
+}                                                                           
 .cancel-mark{
     color: white;
     position: absolute;
@@ -95,6 +243,7 @@ nav > * {
   gap: 20px;
 }
 
+
 nav .login {
   width: 100px;
   height: 40px;
@@ -107,14 +256,19 @@ nav .login {
 .sub-div{
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .sub-div i{
   margin-left: 15px;
+  gap: 10px;
+
 }
 
 .globe{
   margin-right: 5px;
+  gap: 10px;
+
 }
 
 nav .sign{
