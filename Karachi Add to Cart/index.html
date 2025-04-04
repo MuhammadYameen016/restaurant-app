@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+  <div class="navbar-main-div">
+    <div class="main-logo">
+      <img src="imagelogo1.svg" width="100%" alt="" srcset="">
+    </div>
+    <div class="loction">
+      <i class="fa-solid fa-location-dot" id="a1"></i>
+      <h5 id="navbar-text">Location Karachi</h5>
+    </div>
+    <div class="buttons-div">
+      <button id="btn-light-n"> Login</button>
+      <button id="btn-Dark">Sign Up</button>
+      <i class="fa-solid fa-globe" id="global-div"></i>
+      <div class="dropdown">
+        <a class="btn btn- dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+          id="drop-down-div">
+          EN
+        </a>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">English</a></li>
+
+        </ul>
+
+      </div>
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+      </div>
+
+    </div>
+  </div>
+  <div class="navbar-main-mobile-div">
+    <div class="nav-first-row">
+      <div class="user-icon-div">
+        <i class="fa-solid fa-user" id="user"></i>
+      </div>
+      <div class="main-logo">
+        <img src="imagelogo1.svg" width="100%" alt="" srcset="">
+      </div>
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+      </div>
+    </div>
+    <div class="nav-second-row">
+      <div class="loction">
+        <i class="fa-solid fa-location-dot" id="a1"></i>
+        <h5 id="navbar-text">Location Karachi</h5>
+      </div>
+    </div>
+  </div>
+  <div class="hero-section-main">
+    <div class="hero-text">
+      <h1 id="a5">Food and groceries delivery from Karachi’s best restaurants and shops</h1>
+    </div>
+    <div class="hero-image">
+      <img width="60%" src="image1.webp" alt="" srcset="">
+    </div>
+  </div>
+  <div class="hero-last">
+    <p id="a6">Homepage >
+    </p>
+    <p>Karachi</p>
+  </div>
+  <div class="hero-card">
+
+
+    <div class="card" style="width: 23rem;">
+      <img src="images/card0.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Spice it up</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <div class="nicha-body">
+        <p id="a7">Rs 300</p>
+        <button class="add-to-cart" data-id="1" data-name="Burger" data-price="300">Add to Cart</button>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+    </div>
+
+    <div class="card" style="width: 23rem;">
+      <img src="images/card1.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Nice Foods</h4>
+        <p class="card-number">⭐ <span class="card-span">4.6</span>(100+)</p>
+      </div>
+      <div class="nicha-body">
+        <p id="a7">Rs 500</p>
+      </div>
+
+
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>10% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="2" data-name="Nice Foods" data-price="500">Add to Cart</button>
+
+    </div>
+
+    <div class="card" style="width: 23rem;">
+      <img src="images/card2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Crispy point</h4>
+        <p class="card-number">⭐ <span class="card-span">4.7</span>(100+)</p>
+      </div>
+
+
+      <div class="nicha-body">
+        <p id="a7">Rs 500</p>
+      </div>
+      <button class="add-to-cart" data-id="3" data-name="Crispy point" data-price="500">Add to Cart</button>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>10% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+
+    </div>
+
+    <div class="card" style="width: 23rem;">
+      <img src="images/card3.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Sufra By Shazia</h4>
+        <p class="card-number">⭐ <span class="card-span">4.9</span>(100+)</p>
+      </div>
+      <div class="nicha-body">
+        <p id="a7">Rs 800</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>10% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="4" data-name="Sufra By Shazia" data-price="800">Add to Cart</button>
+    </div>
+
+    <div class="card" style="width: 23rem;">
+      <img src="images/card5.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">MashaAllahFood court</h4>
+        <p class="card-number">⭐ <span class="card-span">5</span>(100+)</p>
+      </div>
+      <div class="nicha-body">
+        <p id="a7">Rs 400</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>10% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="5" data-name="MashaAllahFood court" data-price="400">Add to Cart</button>
+
+    </div>
+
+    <div class="card" style="width: 23rem;">
+      <img src="images/card6.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">BISMILLAH KITCHEN!</h4>
+        <p class="card-number">⭐ <span class="card-span">5.1</span>(100+)</p>
+      </div>
+      <div class="nicha-body">
+        <p id="a7">Rs 500</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="6" data-name="BISMILLAH KITCHEN!" data-price="500">Add to Cart</button>
+    </div>
+
+    <div class="card" style="width: 23rem;">
+      <img src="images/card7.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">AA-2 Food Center</h4>
+        <p class="card-number">⭐ <span class="card-span">3.9</span> (100+)</p>
+      </div>
+      <div class="nicha-body">
+        <p id="a7">Rs 600</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="7" data-name="AA-2 Food Center" data-price="600">Add to Cart</button>
+    </div>
+
+    <div class="card" style="width: 23rem;">
+      <img src="images/card8.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Chatkahra by umme jia</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+
+      <div class="nicha-body">
+        <p id="a7">Rs 200</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="8" data-name="Chatkahra by umme jia" data-price="200">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card9.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Hasnain Pakwan Centre</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>11% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+
+      <div class="nicha-body">
+        <p id="a7">Rs 900</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="9" data-name="Hasnain Pakwan Centre" data-price="900">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card10.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">AP Ka APNA Kitchen</h4>
+        <p class="card-number">⭐ <span class="card-span">4.6</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>17% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+
+      <div class="nicha-body">
+        <p id="a7">Rs 700</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="10" data-name="AP Ka APNA Kitchen" data-price="700">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card11.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Mrs Zaeem's Kitchen (Homechef)</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 700</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="11" data-name="Mrs Zaeem's Kitchen (Homechef)" data-price="700">Add to
+        Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card12.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Sarwar Halwa Puri</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 700</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="12" data-name="Sarwar Halwa Puri" data-price="700">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card13.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Karachi Haleem and Sheer Mall</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 450</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="13" data-name="Karachi Haleem and Sheer Mall" data-price="450">Add to
+        Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card14.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Pehalwan Paya House</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 220</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="14" data-name="Pehalwan Paya House" data-price="220">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card15.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">PIZZA BURG</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 450</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="15" data-name="PIZZA BURG" data-price="450">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card16.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">King Broast
+        </h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 550</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="16" data-name="King Broast" data-price="550">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card17.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Al Noorani Student Biryani and</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 100</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="17" data-name="Al Noorani Student Biryani and" data-price="100">Add to
+        Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card18.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Kababjees Fried Chicken - Gulshan E</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 220</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="18" data-name="Kababjees Fried Chicken - Gulshan E" data-price="220">Add to
+        Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card19.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Ghazi Fast Food- Awan town</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 1000</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="19" data-name="Ghazi Fast Food- Awan town" data-price="1000">Add to
+        Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card20.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">AL Mehmood Restaurant and Pakwan</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 400</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="20" data-name="AL Mehmood Restaurant and Pakwan" data-price="400">Add to
+        Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card21.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Eeman's Kitchen</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 560</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="21" data-name="Eeman's Kitchen" data-price="560">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card22.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Allah Razi Beef Pulao</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 550</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="22" data-name="Allah Razi Beef Pulao" data-price="550">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card23.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Bistro Eatery</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 330</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="23" data-name="Bistro Eatery" data-price="330">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card24.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Iqra Chaat House</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 100</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="24" data-name="Iqra Chaat House" data-price="100">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card25.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Quick Bite</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 250</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="25" data-name="Quick Bite" data-price="250">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card26.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Food's Heaven</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 500</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="26" data-name="Food's Heaven" data-price="500">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card27.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Burger Top</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 600</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="27" data-name="Burger Top" data-price="600">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card28.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Pizza Tycoon</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 1000</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="28" data-name="Pizza Tycoon" data-price="1000">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card29.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Flame House</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 350</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="29" data-name="Flame House" data-price="350">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card30.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Pizza pie</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 700</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="30" data-name="Pizza pie" data-price="700">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card31.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Desi dhoom</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 1100</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="31" data-name="Desi dhoom" data-price="1100">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card32.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Al-Rozi Pakwan</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 5000</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="32" data-name="Al-Rozi Pakwan" data-price="5000">Add to Cart</button>
+    </div>
+    <div class="card" style="width: 23rem;">
+      <img src="images/card33.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">New Quetta Zam Zam Piyala Hotel</h4>
+        <p class="card-number">⭐ <span class="card-span">4.5</span>(100+)</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <div class="nicha-body">
+        <p id="a7">Rs 100</p>
+      </div>
+      <p class="card-position"> <i class="fa-solid fa-percent"></i>15% off</p>
+      <p class="card-position2">Welcome gift: free de...</p>
+      <button class="add-to-cart" data-id="33" data-name="New Quetta Zam Zam Piyala Hotel" data-price="100">Add to
+        Cart</button>
+    </div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <div class="cart-total">
+        <strong>Total: Rs <span id="cart-total">0.00</span></strong>
+      </div>
+      <button id="checkout-btn">Proceed to Checkout</button>
+      <button id="clear-cart">Clear Cart</button>
+    </div>
+  </div>
+  <div class="footer-container">
+    <h2>Food Delivery in Karachi From Only The Best Restaurants</h2><br>
+    <p>For those who like good food, exciting new options are now available in Karachi. Whether you live in Karachi, or
+      are simply enjoying a holiday in the area, culinary delights aplenty are now just a simple online order away. The
+      Karachi food delivery service has enjoyed a culinary renaissance in recent years, with a blossoming of new
+      restaurants and take away eateries on almost every street; in fact, there are now literally hundreds of
+      restaurants in Karachi, and foodpanda.com is the fastest, easiest and most reliable way of locating and ordering
+      from the outlet of your choice. And whether you're in the mood for some comfortably familiar flavours, or fancy
+      sampling some excitingly exotic dish, the meal of your choice is now just a few button clicks away, delivered
+      fresh and piping hot to your door.</p><br>
+    <h2>Why food delivery from foodpanda?</h2><br>
+    <p>Our team of experts have paid a visit to every restaurant you’ll find here, and checked they’re up to our strict
+      standards - only Karachi's most beloved spots are here to order from. Quickly place and pay for your order online,
+      and find your food delivered straight to your door in no time at all.</p><br>
+    <h2>Discover the Best Restaurants in Karachi</h2>
+    <p>- Do you fancy fine, high quality food from an upscale, refined eatery? Then you'll love the Mediterranean,
+      Italian fusion cuisine available at Okra restaurant, or Cafe Aylanto.
+    </p><br>
+    <p>- Maybe you're in the mood for a hearty, beach-style barbecue? Kolachi restaurant or BBQ Tonight are ready and
+      willing to oblige.</p><br>
+    <p>- Or perhaps you feel that spice is nice? Saffron or Dumpukht are two of the hottest Indian takeaways in town.
+    </p><br>
+    <p>- And then there is the ultimate in social food, the pizza. Swap slices of this perennial crowd-pleaser with an
+      order from Pompei Italian Restaurant Karachi, or 14th Street Pizza.</p><br>
+    <h2>Food for your friends or the office?</h2><br>
+    <p>Let us do the hard part of entertaining and bring the food right to you and your friends. Alternatively if you
+      need to organize some catering for your co-workers, are working late, or want to treat the team, you can
+      conveniently order straight to your office.</p>
+    <div class="foot-image">
+      <div class="imgs">
+        <img src="footer.webp" alt="" srcset="">
+      </div>
+      <h6>Download our free app!</h6>
+      <img src="footer2.png" alt="" srcset="">
+    </div><br><br>
+    <!-- First row of columns -->
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Food Delivery in Karachi From Only The Best Restaurants</h3>
+        <ul>
+          <li><a href="#">American Food Delivery in Karachi</a></li>
+          <li><a href="#">Kababjees - Clifton, KFC - Boat Basin,</a></li>
+          <li><a href="#">McDonald's - Corniche, Red Apple -</a></li>
+          <li><a href="#">North Nazimabad, Burger Lab - Badar,</a></li>
+          <li><a href="#">Burger O'Clock</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Pizza Delivery in karachi</h3>
+        <ul>
+          <li><a href="#">Italian Food Delivery in Karachi</a></li>
+          <li><a href="#">Broadway Pizza - DHA, 14th Street</a></li>
+          <li><a href="#">Papa John's Johar Town</a></li>
+          <li><a href="#">Pian Hakkuna Matata</a></li>
+          <li><a href="#">Golden Bite Pizza</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Pakistani Food Delivery in karachi</h3>
+        <ul>
+          <li><a href="#">Roll Inn, Daily Dubai Restaurant,</a></li>
+          <li><a href="#">Cafeela, A-One Snacks, Student</a></li>
+          <li><a href="#">Butt Karahi Town</a></li>
+          <li><a href="#">Bundu Khan Town</a></li>
+          <li><a href="#">Biryani Express - DHA</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Burgers Delivery in Lahore</h3>
+        <ul>
+          <li><a href="#">Burger Lab</a></li>
+          <li><a href="#">Hardee's Johar Town</a></li>
+          <li><a href="#">Burger Hub - Gulberg</a></li>
+          <li><a href="#">The Daily Deli Town</a></li>
+          <li><a href="#">Brioche Dorée</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Second row of columns -->
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Chinese Food Delivery in karachi</h3>
+        <ul>
+          <li><a href="#">The Wok - China Town</a></li>
+          <li><a href="#">Chop Chop Wok</a></li>
+          <li><a href="#">Ling Ling Town</a></li>
+          <li><a href="#">China Grill</a></li>
+          <li><a href="#">Bamboo Union</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>East Food Rice Delivery in karachi</h3>
+        <ul>
+          <li><a href="#">Foodie Express</a></li>
+          <li><a href="#">Biryani King</a></li>
+          <li><a href="#">Biryani Xpress</a></li>
+          <li><a href="#">Pilaf House</a></li>
+          <li><a href="#">Tasty Pilau</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>International Countries</h3>
+        <ul>
+          <li><a href="#">Romania</a></li>
+          <li><a href="#">India</a></li>
+          <li><a href="#">Hong Kong</a></li>
+          <li><a href="#">Bangladesh</a></li>
+          <li><a href="#">Singapore</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Third row of columns -->
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Near karachi</h3>
+        <ul>
+          <li><a href="#">Restaurants in Johar Town</a></li>
+          <li><a href="#">Restaurants in Iqbal Town</a></li>
+          <li><a href="#">Restaurants in Model Town</a></li>
+          <li><a href="#">Restaurants in Islamabad</a></li>
+          <li><a href="#">All Cities in Pakistan</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Top Areas in karachi</h3>
+        <ul>
+          <li><a href="#">Restaurants in Johar Town</a></li>
+          <li><a href="#">Restaurants in Iqbal Town</a></li>
+          <li><a href="#">Restaurants in Model Town</a></li>
+          <li><a href="#">Restaurants in Islamabad</a></li>
+          <li><a href="#">All Cities in Pakistan</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer bottom / disclaimers -->
+    <div class="footer-bottom">
+      <p>© foodpanda</p>
+      <p>
+        <a href="#">pandapay Terms and Conditions</a> |
+        <a href="#">About us</a> |
+        <a href="#">Careers</a> |
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Human rights policy</a> |
+        <a href="#">Cookies</a> |
+        <a href="#">Cart Terms and Conditions</a>
+      </p>
+      <p>
+        <a href="#">Help Center</a> |
+        <a href="#">Rider Onboarding</a> |
+        <a href="#">Roamingfood panda Apps</a> |
+        <a href="#">foodpanda Voucher</a> |
+        <a href="#">Deals</a> |
+        <a href="#">foodpanda monthly subscription</a>
+      </p>
+      <p>
+        <a href="#">Update on COVID-19 in Pakistan</a> |
+        <a href="#">Locations</a> |
+        <a href="#">Press</a> |
+        <a href="#">Partner with pandapay</a> |
+        <a href="#">American Diner food in Karachi</a>
+      </p>
+      <p>
+        <a href="#">German Grocery Delivery in Pakistan</a> |
+        <a href="#">Chinese Groceries</a>
+      </p>
+    </div>
+    <hr>
+    <div class="footer-end">
+      <div class="image-footer-end">
+        <img width="10%" src="imagelogo1.svg" alt="" srcset="">
+        <img width="10%" src="foot-end.png" alt="" srcset="">
+      </div>
+      <div class="second-imge-footer">
+        <img width="60%"
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTExIVFRUXFRUVFRUXFRUXFRgXFRUXGBUVFxcYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy4lHyYtLS0tLS0tLS0tLS8tLS0tLS0tLi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKYBLwMBEQACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcDBAUBAgj/xABKEAABAgMFBgIECQkGBwEAAAABAAIDETEEIUFRYQUGEnGBsQehEyJSkTJCYnJzkqKy0SMkM1NUgsHC0hSDk7PD8BYXNEPT4fEl/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAMEBQIBBgf/xAA3EQACAgEBBQQIBQQDAQAAAAAAAQIDEQQFEiExQRNRYXEVIjJSgZGhsRQjM8HRJELh8AY0cvH/2gAMAwEAAhEDEQA/ALsrfSSAa45IBrjkgAuvF6AC6l80A0wzQDTDNAK3U1QCukvNANcckAnjjkgFL/JAKUvmgGmGaAaYZoBW7DNAK1ukgE8cckA1xyQCl/kgAupegFLsM0A0wzQDTDNAK1uQCt+OSATxxyQDXHJAKUvmgFLq6oBphmgGmGaAVrdJAJzv8kAnjjkgGuOSAUpegAMqXoAda4IB3QDugHKuKAcqYoB2xQDsgHOmCAc+iAd0A7oByrigHLqgHKmKAdkA50wQA69EA51wQDugHKuKAcuqAcqYoB2QDnTBAOfRAOdcEA7oByrigHLqgHKmKAdkA7IBz6IBzrggHdAO6Acq4oAPkoBzrggHdAO6Acq4oBypigHbFAOyAc6YIBz6IB3wQDugHKuKADTqgHKmKAdkA50wQDn0QDnXBAO6Acq4oBy6oBypigHZAOdMEA59EA51wQDugHKuKAcuqAcqYoB2QDnTBAOfRAOdcEA7oB3QDlXFAB8lAKVxQDTHNANMc0AF9yAVpcgGuGSAa4ZIBS+qA+IkRrB6zgNSQJe9EmzzKNU7Xs4uNogz+lZ+K67OXcxvIzwbXDfcyIxxza5p7FeOLXNDKM0p3UXh6K0uQDXDJANcMkApfhkgFK40QDTHNANMc0A0xzQCtLkA1wyQDXDJANcMkApW9ANMc0B44yqeqA1Iu1rO251ohNOsRg/ipFTY+UX8j3dZ7C2nAfcyPCPKIwz9xR1Tjzi/kN1m2DO8U7qM8GuGSAa4ZIBSt6AUuKAaY5oBpjmgFaXIAL6XIBKV1ZoBphmgGmGaAVupJAK6SQHhd8Y3S/3NAQ3b/iJZ4JLYI9PEpcZQgfn/ABv3Qeat1aOcuMuCIZXJciB7U33t0ef5b0TT8WF6n2vheavQ0tcemSF2yZHo0RzzNzi45uJJ95U6SXIjyfEl6AAgOts7eS1wP0doiAey53G36r5gdFFOiuXNHSnJdSZ7E8TpkNtcL+8hT+0wnseip2aHrB/Mmjf3lg7P2hCjsEWE9r24Fpn0IqDoVRlCUXhk6afFGzrjkuT0Uv8AJAKaz8kAlh5oBphmgGnmgFdJIBr5IBrjkgGvkgI7vJvnZLDNr3ccX9UyRfpxYMHM+9WtPorb+XBd7Jq6Jz5LgVptnxNtsWbYPDZ2YcI44nV7hL3NC2qdmUQ4z9Z/JFyGjS5kSttuixjOLFiRD8t7nfeNy0YRrh7MUvInVCXJGpwjIKXtDvsmecIyHuTtD3sjdsG17RAIMGPFhywa9wHVs5HqFFZXVZ7cU/gePTp80TLYfiraoZAtDGx24uADInO71TykOazL9lVS41vH1X8kE9An7LwWbu5vTZbaOKA/15TdCd6sRvNuI1EwsW/TWUP118ShbROv2kdoXazVchAuurqgGmGaAaYZoBXRADfW5AOVMUA7IB2zQDnTBAa20toQ4EN0WM4Ma3HsAMScl1CDk8I8bSWWU7vbvnGthLBOHAwhirtYhFfm0GtVrUaaNay+LKk7HIjCskYQBAEB9Q4bnfBaTyBPZeNpc2MHroDxVrhzaQvN5d57hnwujw3tj7XjWWJ6SC8tOIq1wGDm4jthJR2VxsWJHUZNci5N0t64VtZd6kZo9eET9pvtN7Y4TybqHU/AtQmpEgGlcVASAadUA5UxQDtmgHOmCAc+iAc64IA4yvNfJAVVvv4ilxdBsTpC8PjipzELIfL92a1dLo0sTs+X8mtptnv2rF8P5K0N8ybyTMk1JNSTiVq9phYNNU8DySdodqk8knaHSpEk7Q67I84V72h72Z5Je9oOyPOFddoOzPuzxXQ3B7HFrmmbXNJDgcwRReSkpLDOJUqSw0W5uJ4iCMW2e1ENimQZFuDYhwa7Brz7joa4mr0W5mdfLu7jF1ez3XmcOXd3FjcqYrNMsds0A7ZoBz6IAdbkA5UxQDsgHZAfFojNY1z4hAY0FxJoABMk9F6k28I8bwUfvjvM+2xZ3iCwkQmfzuHtHyF2c9jT0KuPiypZPeZwFYIwgCA9a0kgATJuAFSTQDVHwBbG6W4EKExsS1NESIRMsdfDZpKj3Zk3ZZnKv1UpPEOCLUKkuLJvDYGiTQA3AAS8gqjbZMfR1pgvAUp4lD/9CL82F/ltWxpP0kU7faIwrJGZ7DbIkGI2LDcWvaZtcP8Ad4wIXMoqSwz1Np5ReO6e8DbbAERsmxB6sVnsu0+Saj/0VjXVOqWOhchPeR2uXVQnY5UxQDsgHOmCAHXogHOuCAqzxP3tLi6xwXXC6O8fGP6oHIfGzpnO7pq0vXkb2zdDwVs15fyVtwq72ps7hks9mfEcGMY57nGTWtBLjyAXjtxzYluwjvSeETPZnhfa4g4or4cEZEl7xzDbvNQS1iXLiZlu1qYvEU39Dof8pIlf7Wz/AAnf1rn8b4EPpmPufX/A/wCUcT9rZ/hO/rT8b4D0zH3Pr/gHwjf+1s/wj/Wn47wHpmPufX/B4fCKJ+1s/wAJ39a9/H+A9Mx9z6nJ2v4ZWyCJw+COBgwkP+q6vQkqWGti+fAsU7Vom8SyvsQyJCLSWuBBBkQQQQRUEGhVpWo1ElJZR8SXe+NwuDwx3wMdossd04rR+TcaxGAXtJxe0e8cjPJ1dCi9+PJnzm0tD2T7SC4dfAsLsqRkDsgHPogB1QCtLkA1wyQDXDJAVt4rbeI4bIx1ZPjSyrDZ/Mf3VoaKr+9/Ar3T/tK2WiVwgCAICU+GuzxGtzC4TEJrostWyDfcXA9FV1c92vzJKlmRdOuGSyC4c7be24FkZ6SM7haTJrQJuccmtH/xd11ym8ROZSUeZGD4oWOf6K0EfNhf+RWvwNneiPt0V7vbtZlrtT48MODXBgAeAHeqwNM5EjDNXqK3XBRZBOW88nHUxwEB29z9uGx2lsSZ9G6TIo+QT8Lm2vvGKgvq7SGOvQ7rlusvZpneKVuxCxS6e64ZIBrhkgGuGSAUrfkgI/vxtw2OzOc0/lX+pC0Jq790TPOWa9jjPEvbP0v4i5J8lxZRph/7x5lT9sfYKK5H1CsznODWguc4hrQKkkyAHVO2PXiKbfBIuPYmybNsmymLFI9JIeliVLnGkKHpO4DGpUUpuTPkr77dfduw5dF3eLIbtnxFtcRx9BwwGYSa10Q8y4EdAOpROPU2tPsWmCzZ6z+SOV/xltH9qf8AVh/0rrMCz6L0vuff+Tz/AIz2j+1P+rD/AKV7mHcPRWl9z6v+Tw767R/an/Vh/wBK9W53HvorS+59X/J5/wAbbR/an/Vh/wBK6xDuHorS+59zu7A8TI7HNba2iIw/9xrQ2INZD1XjQSXMq4vkUNTsSuSfYvD7s5/+Ej313ahbQgf2mzyMYM42ObSKyU+A5nImhuSq1weGZ2g1c9Lb2Vns5w89PEpiSvKw+t3TLZY74T2xGOLXscHNIwIMwunJSWGR2VKcXGXI/Qu7W2G2uzQ44u4hJ7fZeLnN9/lJZc47ssHxGq07otdb6fY6muGS4K4pW9AJyregFdEA18kBjtEZrGuiOMg1pc7QNEyfcF6ll4PG8H562nbnR40SM74UR5cdJ0b0Eh0W7CO7FR7ii3l5NZdngQBAEBO/CEfnMX6H/UYqOu9heZPRzZa+vkswslXeMLz6WzjDgiGWpc0HsFpaHlIrX80V8r5AEAQBAEBdHhttP09ia1x9aCfRHUAAs+yQOix9VDdsfiW6pZiSrXyVYlGvkgFL/JAKazQFSeI1t9NaywGbYI4B84yLz2H7qr2W4eD63Y+n3KN985cfh0Iv6FRdsa2CTeHWzw+2tJpDY+IOdzR96fRSVT3ngy9sWOGmwurS/c3vFK2ufHZB+JDYHSze+d/RspfOK9ttw8EOwqFGp2dW8fBEJ9Eou1N0yWWwRIrgyGxz3GjWiZ56DVdxm3yOLLYVR3pvCJNZvDe1uE3GFD+SXFzuvCCPNTpSMqe3NPF4im/oYrd4c21gm30cXRj5O9zwB5r31jurbemm8Syvh/H8HG2LYGttsGHamcLfSNERrxLPhDgfil3DpJFMuam1y0s50PLxwx/vcW9vfZ4BsUYRQ3gENxaZD1XAepwfKnKUl3nifHaCdq1EOzznK/zking/tBxZGszjcwtiM04yQ8cpgHqUbya239OoyhauuU/gQjfawiDbrQxokOPiA0iND/5ipozNrZs3bpYSfPl8uBwuFdqwvbpYfg9tQtixbMTc9vpWD5bZBw6tkf3Fxc97ifO7f0+YRuXTg/2LX18lAfLgXazQAXUvQA61wQDvkgI14i2v0dgje0/hh9HuAd9niVjSx3rUR2vESklslMIAgPCUBM4fhrbSA7js8iARN8TET/Vqn+Nr7iXsZEo3D3RtFijPfGdCIdD4RwOcTPiab5tF1yranURsSUSWqtxfEnHfAKmTEK3+3UtFtiQnQnQxwMc1we5wMyQRKTTgFc018ak1IhtrcuRFv+WVt9uz/Xif+NWfxtZF2EiK7TsLoEV8F5aXMdwuLSS2csCQDjkrUJb8VJdSNrDwaq6PAgCAn3hDa5R40Im58MPHOG6X+p5Kjro+qpeJPQ+OC1OdcFmFkd8kA5VxQHy9waCcACT0XjeFk9Sy0ij7S8ve55q9znnm4knusOVuW2foFcFCCiuiwY+Bc9oSEt8NW/nL/oT99iuaKWZteBi7d/Qj/wCv2Zp7/MnbX/Nh/cC51UsWE2xv+ovNnBslidFe2GwTc5waBqc9MVDBuTSRo22xqg5y5ItrZWzYFggEzAkJxIhq4/hk1a0YxqjxPir77tbb58l3f71ZGrf4hkOPoYIl7UQmZ/dbT3qvLWLPqo1qdgprNsuPgfWzvEQcUo0HhBq9hLpalpvlyJXUNUnzRzfsFpZqll9z4fU7u8Ow4O0IALS0nh4oUUXynQE4tOI/irDSmsozdJq7dFd8eKKfthi/o4j3ngJHA57iGltxABMh0VbtHyZ9rVGrhOCXHrhEu8JmStEb6IffCmqlkxv+Q/pQ839ji+I7J7Qj/wB1/ksXbnhl3Y3/AE4fH7si7mLpTNU6e6dqMG22eJlFa08nngPk4qTeyintCrtNNZHwz8uJ+gO64Pz4cuqADS9AOdcEA7oCDeL0SVlhDExxPpDifirmiXrvyIb/AGSplqlUIAgPl9DyKA/R1j/RsnTgbL6oXz8ubL65Gbn0Xh6O+CAd0A5VxQH5727H9JaY7/ajRSOReZeUlu1LEEvAoSfFmipDwIAgJV4ZRJbQhj2mRW/YLv5VV1n6RLT7RdHOuCyC2O6Acq4oDS20/hs8YjCFEP2Co7niuXkT6VZugvFfcpzhXzmT7zI4UyMkr8OQP7S+f6o/fYr+z3+Y/IxdufoR/wDX7M1N+x+eP+az7oXGtf5vwRNsZ/0q82bHh5Zg60uefiQyRzcQJ+6fvUmgW9Y2+hFtuxxoUV1f2N7xKtjpwoM7pGI7W/hb7pOUuvsaxH4lfYVMfWtfkiDcKzlI+jyfJYut8Fh+GlpcYMWGTcx4I0DwZgdWk9StTRTck13Hy+3akrYzXX9iK7+WUNtsWVHBj+paAfME9VDqHu2NGvsixy0kc9Mo6Xhc2Voiz/VD74U2lllsqf8AIP0oeZxvEFk7fG/u/wDKYvbJYmXtjP8Ao4fH7sjLoaKZq5MYHCQ4VBBHQzUsZiSTi14P7H6MaZ0qpz80fB4PeXVDwD5KAUr0QDTHNAQbxdhzskM+zHbM84cT/wBK7oX+Y14EN/slTLUKoQBAeEICeQfE+O1ob/Z4RkAPhPwElRehi+pOr2SXcjfGJbor4b4TGBsPjBaXEz4gJX81X1GnVSTTJK7HJky0xzVQlIhvxvdEsL4bGQ2P42ucS4uBEiBdLmrWn06tTbZFZY4kaPilH/Z4X1nqz+Bj3kfbvuICSrq4EAXoCAICVeGMOe0GH2WRHfZ4f5gquseKiWn2i6NMc1kFsaY5oBpjmgNPbLOOzxmjGFEHObSorlmuXkybTPF0H4oqANXzG8fc5PeBMjJKPDwStD/oj99i0tmv8x+Rj7a/Rj5/szV35b+eP+az7oUWvf578kTbHf8ATLzZm3AtAZaS0/8AcYWj5wIcPIFd7OsStw+pHtqtzoUl0Z0fEXZ5IhxgJ8ILH6AmbTynMdQrG0a3hTXTmVdiahRcqn14og0ll5Po8nhC93j3JY+4GznQoBiOEjEcHAfIA9X3zJ5ELa0NbjXl9T5LbOoVt27F8I8PiQ3fC0iLa4rhQEMH7gAPnxKhqbM2vHkb+y63XpYp9ePzOr4aCUeL9F/OFZ0LzJlLb36UPM5O/jPz6N/d/wCUxeaiWLWv95F3Y7/pIfH7sjboa4jM1Ez4bA4iGipIA6mSmjLiJyxFvwZ+ggMMRitE/N3zFadUPAL6XIBS6s0A080BHPEKyelsEYCrAIgPzHBzvs8Sn00t21EdizFlILaKYQBAEAQE78If+pjfQ/6jVR13srzJ6ObLX081mFkq3xh/TWf6N/3gtLQ8pFa/miv1fIAgCAIAgLA8ILJONGjSuaxsMHV7pnyYPeqGvl6qiT0LjktLTzWaWRp5oBW7zQHjm8Vx5c141lYPU8PJUloshY9zDVri33GX8F8jYtybi+jPta7VOCkuqMfolzvEm+STcJsrQ/6I/eatPZT/ADX5fwZO2HmmPn+zNTfRn52/5rPuhR7Rf578kS7Kf9MvNnFhFzHBzTJzSCDkRRU4zcWmuhoySnFxfJlk7E2xDtcPhdIPlJ8M45kA1aV9HptTC+GOvVHyeq0lmlnlcujOXbdxoTnEw4joYyI4m9JkHzKhs2bBvMXgt07atisTSZk2ZuVAhu4ojjFIvAIDWfVx6mS6q0EIPek8nGo2xbYnGPqrw5mXereJsBhhwyDGIkAPiA/GdkcgutVqlUt2PP7HGz9BK+W/LhFfUrQhYuT69Y6Es8N7o8X6L+cLR2f7cvIw9uv8qHmcvfhv57F/u/8AKYo9W/zn/vQu7If9JH4/dkfcxQqRppm/u1YvS2uA3D0jXHkz1z91WqPWmkVdoXdnppy8MfPgXPp5rWPgxXRACJ6IBypigHZAfMWGHNLXCbCCDqCJEeZRcHlDGT897Y2e6zx4kF1Ybi2eYq13VpB6rermpxUl1KElh4NNdngQBAEBO/CH/qY30P8AqNVHXeyvMno5stfsswslW+MH6az/AEb/ALwWloeUitfzRX6vkAQBAEAQF2eHeyzZ7EyYk+L+VfmOIDgH1Q3rNY2ps37H3FyqO7Ek3KmKrkg7ZoBzpggB16ICE72bP4Y3HK6IJ/vC4/wPVfNbVq3Ld7oz6DZt+9VudUcT0Czd40N86+6r/R2gfKBZ1MiPMAdVf2ZaoXpPrwKW0Y79PlxNnfSwflGxRRwDTo4Tl7x2Vna1TjNWLk+BDsq9bjrfNEZMFZKka6kfIYQZgkEUIMiORC6jNp5R62pLDOpC3ltTRL0nEPlNBPvqVdhtG+K55Kc9naab5Y8jDbd47VEEjF4R8gBvmL/Nez190+DfyJKtnaaDyo58ziOaq2TQTMbmrpM6yTjw7sDmtiRiPhSY3UN+EffIdCtnZ1bUXNnzm271KUal04sim8lqEW0xXihdIcmgNB8lR1Fm9bJo29BW6tPCL7vvxOWQo0y7kmXhvs2b4kci4D0bTqZFx6DhH7xWloIZzM+f27qPVjSvN/sT/tmtM+bHPogHO5AOVMUA7IB2QFeeKuwC5rbWwXsAZFA9ifqv6EyOhGSv6K3D3H8CvdDPFFYLSK4QBAEBO/CH/qY30P8AqNVHXeyvMno5stftiswslW+MH6az/Rv+8FpaHlIrX80V+r5AEAQBASDcjYBtlpDSPyTJPinCQNzObiJcgclX1NvZw8XyO647zLyGnVYxdHKmKAdkA50wQDn0QGltexelhlp+EL28xh1vCp63Tq+px680WNNc6p73TqQ50CVxC+RaaeGbynnifIhyvFReCik08o9ck1hkrsNqZaIfA8DilJzTj8pv+7l9RptTXq69yfPHExLqZ6ee9Dkcm2bsOnOGQ5uRucP4HyWfdsixP8p5XiXatpxa9dYNJ27cf2B9Zv4qD0Zqe76osraNPeY3bs2j2B9Zv4rr0bqe76nS2lR3mJ+69p9gfXb+K99Hanu+p2tp6fvMbt1LV+rH12fiuls7Ud31OvSmn738jf2buU7iBjuAHsNMydC7DordOzHnNj+CKuo2ysYpXxZub0bdZAh+ggSD5cJ4aQ2ylK6jpUGFVPq9VGqPZw5+HQr7P0Ur59rby+7/AIK9LVjJn1KZ92azOiPaxgm5xkBr+ClhFzaiuZzZbGuDnLki3dk2BsCCyE34LRec3G9zupX0VVargoo+I1F8r7HZLmzc7KQgHOmCAfOQCtLs0A1wyQDXDJAfMVgIIcA5rgQWm8EEXgg4STOOKBSu++6rrFE4mgmA8+o72T+rccxgcRqCtjTXqyOHzRTsr3XkjKskYQBATjwljNbaYvE4NnBkJkCfrtuE6qlrU3FY7yah8S2Q8G8ESyWXgs5Kt8X3gxoEiP0b+nrBaWh5SK9/NEAV8gCAIDa2Zs+JaIrYUJvE9xuGAGLnHBozXE5qCyz1Jy4IvPdnYTLHBEFl7vhRH0L3Gp0GAGQWNba7JbzLsIqKwdWtLs1EdDXDJANcMkA1NMkAN1eiAaY5oDi7Z2bMl7Rf8YfxCw9paHP5ta81+5f0uo3fUkcYw1hYNHePA0i8Xaosp5XMNp8Gb0Ha8Zt0w7mPwqtCvamogsN58ytLSVS8DIdvxPYZ5/ipvTNvuo4/AQ72fDt4ovsM+1+KembPdR16Ph3mM7zRfYZ9r8V76Zs91fU6Wza3/czC7eqN+rh/a/FPTFnuo7Wy6/eZzbfvDaYglxhg+QJH61fNRWbRunwzjyLlOz6IPOM+ZwHsVVM0oswli7RJnHEn+5273oW+miD8oRcPYbl844+7Nb2i0vZrflzf0PmNp6/tpdnD2V9WSfXDJaBkjXDJADdXogBuregFb6fxQDXyQCePkgFL0BhtlkZFY6HEaHseJOBpL/d89F7GTi8rmeNZWCot7txotlJiQZxYFbr3sHygKj5Q6yWrRqlZwlwZVnU1xREFbIggPCEB6F4DyS9B6gCA6mwNgR7Y/hgtuB9aIbmM5nPQXqK26Na9Y6jBy5Fx7sbtQbEzhZ6z3S44pHrOOQ9luQ7m9ZN10rXx5FuEFE7dbqaqE7FdJIBr5IBr5IBS/wAkAprNAKXeaAaeaA5du2ZOZYOYwPJY2t2bvevVz7i5TqcerI5LoUqrElBxeHzLylnijG5i4wdKRjcxc4O0zE5i8wdqRifDQ7TNd8NCVSNWJDXqZKpGFlmc9waxpc40Aqpq4ym92Kyzt2xgt6TwiY7u7sthERIsjEwHxW8s3a//AFfQ6PQKrE58ZfYwdbtKV2YQ4R6+JI6300WkZY18kA18kAprNAJy1QA61wQDXFANcckA5VxQAadUA7ZoCK7wbh2W0kvaPQvPx2AcJPymUPMSOqs1aqcOHNEcqlIge1PD22wpljWxm4FhAd1Y6R6Cauw1lcufAgdMkRy1bOjQv0kGIz5zHN7hWVOL5NEe6+41S4ZhdHhkgwXPMmNc45NBcfJeNpc2epNnb2dubbo3wbO5o9qJ+THud6x6BQy1Ncep0q5PoTTYnhlDaQ60xPSn9WybWdXfCd5KnZrZP2VgmjRjmTuy2ZkNoZDa1jBcA0AAcgFSbbeWTJYMumGa8PRzpggHPogHOuAQDXHJAOVcUA5dUA5UxQDTDNAOdMCgMNoszX/CHIi4qvfpa7vaR3CyUORzo2y3ChB0NxWRbsua9h5+5bhql1NGNZXCrSOiz7NNbHnFlmNsXyZqvaq7WCZMxOaucN8jvJ6zZ8R/wWOOspD3lTQ0l8/Zizl6iuPORu2bdkm+I4AZNvPvoPNadOx5P9V48EQT2kl+mju2KwQ4QkxoaMTieZxW1Tp66ViCM226drzJmzz6KYiHOuCAa45IB3QDl1QAXUvQDnXBAO6Ad0A5VxQAaUxQDtigHZAOdMEA59EB8GC3FonyC9yzzCPpolcLivD095VxQDl1QDtigHZADrTBAOfRAOdcEA7oByrigHLqgHKmKAfdQDnTBADr0QDnXBAO6A84dL8V5uruPcsAZDmm6u48ye8qYr0DsgHOmCAc+iAc64IB3QDugHKuKAD5KAG6vRANMc0A0xzQCtK4oBWnVANcMkA1wyQClaYIBSt+SAaY5oBpjmgFbhXEoBWnVANcMkA1wyQDU0yQClb8kA0xzQDTHNANBXNAK0uzQDUUxCAa4ZIBrhkgBur0QDQ1wKAaY5oBpjmgFaXZoBqKIBrhkgGuGSAUrfkgGhqgGmOaAaY5oBWl2aAC+lyASldmgGnmgEsPNAJTuyQAX35IBr5IBr5IBS/NAKdUA080Alh5oBW7JABf0QCt/kgGvkgE5X5oAbuqASldmgGnmgEp3ZIBXogFb8kA18kAnK/NAKdUAlK7NAJYeaASndkgAv6IBW/JAJ4+SAa54IBTqgEpXZoBp5oBp5oBXogAHFogP//Z"
+          alt="" srcset="">
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js"></script>
+</body>
+
+</html>
